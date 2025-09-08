@@ -52,4 +52,270 @@ class Main {
     }
 }
 #3
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        System.out.print("Enter the Number:");
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if(a>0){
+            System.out.println(a+" is Positive Number");
+        }
+        else if(a<0){
+            System.out.println(a+" is Negative Number");
+        }
+        else{
+            System.out.println("Given Number is Zero");
+        }
+        
+        
+    }
+}
+#4
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        System.out.print("Enter the Number:");
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if(a%5==0 && a%11==0){
+            System.out.println(a+" is Divisible By Both 5 and 11");
+        }
+        else{
+            System.out.println(a+" is not Divisble By Both 5 and 11 ");
+        }
+        
+        
+    }
+}
+#5
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        System.out.print("Enter the Number:");
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if(a%2==0){
+            System.out.println(a+" is Even Number");
+        }
+        else if(a%2==1){
+            System.out.println(a+" is Odd Number");
+        }
+        else{
+            System.out.println(a+" is Neither Even nor Odd");
+        }
+        
+        
+    }
+}
+#6
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        System.out.print("Enter the Number:");
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if(a%4==0 || a%4==0 && a%100==0 && a%400==0){
+            System.out.println(a+" is Leap Year");
+        }
+        else{
+            System.out.println(a+" is not a Leap Year");
+        }
+        
+        
+    }
+}
+#7
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        System.out.print("Enter the Input:");
+        Scanner sc=new Scanner(System.in);
+        char a=sc.next().charAt(0);
+        if(a>='a' && a<='z' || a>='A' && a<='Z'){
+            System.out.println(a+" is Alphabet");
+        }
+        else{
+            System.out.println(a+" is not a Alphabet");
+        }
+        
+        
+    }
+}
+#8
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        System.out.print("Enter the Input:");
+        Scanner sc=new Scanner(System.in);
+        char a=sc.next().charAt(0);
+        if(a=='a' || a=='A'|| a=='e' || a=='E' || a=='i' || a=='I' || a=='o' || a=='O' ||  a=='u' || a=='U'){
+            System.out.println(a+" is Vowel");
+        }
+        else{
+            System.out.println(a+" is a Consonent");
+        }
+        
+        
+    }
+}
+#9
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        System.out.print("Enter the Input:");
+        Scanner sc=new Scanner(System.in);
+        char a=sc.next().charAt(0);
+        if(a>='a' && a<='z' || a>='A' && a<='Z'){
+            System.out.println(a+" is Alphabet");
+        }
+        else if(Character.isDigit(a)){
+            System.out.println(a+" is Digit");
+        }
+        else{
+            System.out.println(a+" is a Special Character");
+        }
+        
+        
+    }
+}
+#10
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        System.out.print("Enter the Input:");
+        Scanner sc=new Scanner(System.in);
+        char a=sc.next().charAt(0);
+        if(a>='a' && a<='z'){
+            System.out.println(a+" is Lowercase Alphabet");
+        }
+        else{
+            System.out.println(a+" is a Uppercase Alphabet");
+        }
+        
+        
+    }
+}
+#11
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        System.out.print("Enter the Input:");
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if(a==1){
+            System.out.println("It is Sunday");
+        }
+        else if(a==2){
+            System.out.println("It is a Monday");
+        }
+        else if(a==3){
+            System.out.println("It is a Tuesday");
+        }
+        else if(a==4){
+            System.out.println("It is a Wednesday");
+        }
+        else if(a==5){
+            System.out.println("It is a Thursday");
+        }
+        else if(a==6){
+            System.out.println("It is a Friday");
+        }
+        else{
+            System.out.println("It is a Saturday");
+        }
+    }
+}
+#12
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        System.out.print("Enter the Input:");
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if(a==1 || a==3 || a==5 || a==7 || a==8 || a==10 || a==12){
+            System.out.println("It  has "+31+" Days");
+        }
+        else if(a==4 || a==5 || a==9 || a==11){
+            System.out.println("It  has "+30+" Days");
+        }
+        else
+            System.out.println("It has "+28+" Days");
+        }
+}
+#13
+
+
+
+
+
+#14
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        System.out.print("Enter the First Angle:");
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        System.out.print("Enter the Second Angle:");
+        Scanner sc1=new Scanner(System.in);
+        int b=sc1.nextInt();
+        System.out.print("Enter the Third Angle:");
+        Scanner sc2=new Scanner(System.in);
+        int c=sc2.nextInt();
+        int sum=a+b+c;
+        if(sum==180){
+            System.out.println("It  is a Valid Triangle");
+        }
+        else
+            System.out.println("It is a not Valid Traingle");
+        }
+}
+#15
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        System.out.print("Enter the First Side:");
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        System.out.print("Enter the Second Side:");
+        Scanner sc1=new Scanner(System.in);
+        int b=sc1.nextInt();
+        System.out.print("Enter the Third side:");
+        Scanner sc2=new Scanner(System.in);
+        int c=sc2.nextInt();
+        if(a+b>c && b+c>a && a+c>b){
+            System.out.println("It  is a Valid Triangle");
+        }
+        else
+            System.out.println("It is a not Valid Traingle");
+        }
+}
+#16
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        System.out.print("Enter the First Side:");
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        System.out.print("Enter the Second Side:");
+        Scanner sc1=new Scanner(System.in);
+        int b=sc1.nextInt();
+        System.out.print("Enter the Third side:");
+        Scanner sc2=new Scanner(System.in);
+        int c=sc2.nextInt();
+        if(a==b && b==c){
+            System.out.println("It  is a Equilateral Triangle");
+        }
+        else if(a==b && b!=c){
+            System.out.println("It is a Isoscelus Traingle");
+        }
+        else{
+            System.out.println("It is a Scalane Triangle");
+        }
+    }
+}
+#17
+
+
+
 
