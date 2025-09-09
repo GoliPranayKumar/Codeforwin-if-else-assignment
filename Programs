@@ -314,7 +314,41 @@ class Main {
         }
     }
 }
-#17
+#19
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        int sum=0;
+        int arr[]=new int[5];
+        for(int i=0;i<5;i++){
+            System.out.print("Enter the Marks of Subjects:");
+            Scanner sc=new Scanner(System.in);
+            arr[i]=sc.nextInt();
+            sum=sum+arr[i];
+        }
+        float per=(sum/500.0f)*100;
+        if(per>=90){
+            System.out.println("Grade A");
+        }
+        else if(per>=80 && per<90){
+            System.out.println("Grade B");
+        }
+        else if(per>=70 && per<80){
+            System.out.println("Grade C");
+        }
+        else if(per>=60 && per<70){
+            System.out.println("Grade D");
+        }
+        else if(per>=40 && per<60){
+            System.out.println("GRade E");
+        }
+        else{
+            System.out.println("GRade F");
+        }
+        
+    
+    }
+}
 
 
 
